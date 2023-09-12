@@ -1,3 +1,60 @@
 body{
+    text-align: left;
+    background-color: black;
+    color: rgb(128, 29, 220);
+}
+
+h3{
+    text-align: left;  
+}
+form{
+    text-align: left;
+}
+
+p{
+    color: aliceblue;
+}
+
+.card-img-top{max-width: 300px;}
+.card-img-top {
+    width: 250px;
+    height: 320px;
+    margin: auto;
+    display: block;
+  }
+
+  h4{
     text-align: center;
+    color: rgb(255, 78, 107);
+  }
+  .form{
+    text-align: center;
+  }
+
+  h2{
+    text-align: center;
+  }
+  .nome{
+        list-style-type: none;
+        text-align: center;
+  }
+
+.container2 img { max-width: 1000px;}
+.container2 {
+  width: 751px;
+  height: 350px;
+  display: flex;
+  vertical-align: top;
+  margin-top: 50px;
+  position: absolute;
+}
+
+.imagem1 img { max-width: 200px;}
+.imagem1 {
+  width: 70px;
+  height: 50px;
+  display: flex;
+  vertical-align: top;
+  margin-top: 50px;
+  position: absolute;
 }
