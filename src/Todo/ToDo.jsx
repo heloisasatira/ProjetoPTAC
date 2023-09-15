@@ -6,9 +6,7 @@ import "./style.css";
 
 export default function ToDo() {
     const [atividade, setAtividade] = useState("");//definir que inicialmente atividade será uma string
-
     const [lista, setLista] = useState([]);//definir que lista será um array
-
     const [id, setId] = useState(1);// "estado" para contar os ids
 
     const [idUsuario, setIdUsuario] = useState(1);
@@ -49,6 +47,23 @@ export default function ToDo() {
     return (
         <div class="container">
             <Link to="/">home</Link>
+            <h1>O DRAMA, O TEATRO E A ATUAÇÃO</h1>
+            <p>"Drama, que em grego significa “ação”, é um gênero literário surgido na Grécia Antiga como, originalmente, uma forma de louvação religiosa ao deus Dionísio (Baco). Compõem o gênero dramático os textos em prosa ou em verso feitos para serem encenados no palco."
+Veja mais sobre "Gênero dramático" em: https://brasilescola.uol.com.br/literatura/genero-dramatico.htm</p>
+
+            <div class="box">
+                    <div class="row"> <img src="https://1.bp.blogspot.com/-jmdovt0p0cU/UvY9VNJzjLI/AAAAAAAAYqo/8EBMHGpTV0Y/s1600/van+gogh-002.jpg"/>
+                      <span> Titulo da primeira imagem </span>
+                    </div>
+                </div>     
+                <div class="box">
+                    <div class="row"> <img src="https://norfipc.com/fotos/arte/Vincent-van-Gogh-Wheat-Field-with-Cypresses-1889.jpg"/>
+                    <span> Titulo da segunda imagem </span></div> 
+                </div>
+                <div class="box">
+                    <div class="row"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTJiW5pU69MVRTmyMqwQzLzxIYt3Kzyhk0OA&usqp=CAU"/>
+                    <span> Titulo da segunda imagem </span></div> 
+                </div>
 
 
             <h4>Adicione aqui o seu nome</h4>
@@ -67,7 +82,7 @@ export default function ToDo() {
            )}
        
             <h3 class="artistas">Liste aqui os seus artistas favoritos</h3>
-            <form onSubmit={salvar}>
+            <form class="form" onSubmit={salvar}>
                 <input type="text"
                     value={atividade}
                     onChange={(e) => { setAtividade(e.target.value) }} />
@@ -82,11 +97,6 @@ export default function ToDo() {
                     </li>
                 </ul>
            )}
-
-            <div class="testedoteste">
-                <div class="row"> <img class="teste1" src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2023/03/a-noite-estrelada.jpg?quality=100&strip=info"/><p class="noite">A Noite Estrelada, por Van Gogh</p></div>
-                <div class="row2"> <img class="teste2" src="https://s.ebiografia.com/img/im/pr/impressao_o_sol_nascente_c.jpg?auto_optimize=low"/><p class="impressao">Impressão, Nascer do Sol, de Claude Monet</p></div>  
-            </div>
 
         </div>
     );
