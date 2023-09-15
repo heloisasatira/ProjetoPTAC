@@ -15,7 +15,6 @@ export default function ToDo() {
     const [listaUsuario, setListaUsuario] = useState([]);//definir que atividade2 será um array
     const [nome, setNome] = useState("");//definir que nome será um array
 
-
     const salvarN = (e) => {//para coletar o nome do usuário
         e.preventDefault();//previnir a ação de enviar o formulário
         setListaUsuario([...listaUsuario, {
@@ -67,7 +66,7 @@ export default function ToDo() {
                 </ul>
            )}
        
-            <h3>Liste aqui os seus artistas favoritos</h3>
+            <h3 class="artistas">Liste aqui os seus artistas favoritos</h3>
             <form onSubmit={salvar}>
                 <input type="text"
                     value={atividade}
@@ -83,6 +82,11 @@ export default function ToDo() {
                     </li>
                 </ul>
            )}
+
+            <div class="testedoteste">
+                <div class="row"> <img class="teste1" src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2023/03/a-noite-estrelada.jpg?quality=100&strip=info"/><p class="noite">A Noite Estrelada, por Van Gogh</p></div>
+                <div class="row2"> <img class="teste2" src="https://s.ebiografia.com/img/im/pr/impressao_o_sol_nascente_c.jpg?auto_optimize=low"/><p class="impressao">Impressão, Nascer do Sol, de Claude Monet</p></div>  
+            </div>
 
         </div>
     );
