@@ -1,18 +1,28 @@
 body{
     text-align: left;
-    background-color: black;
-    color: rgb(128, 29, 220);
+    background-color: rgb(181, 167, 194);
+    color: rgb(78, 58, 96);
 }
 
 h3{
-    text-align: left;  
+    text-align: left; 
+    color: rgb(78, 58, 96);
 }
+
+.artistas{
+  text-align: left; 
+    color: rgb(254, 254, 254);
+}
+
 form{
     text-align: left;
+    display: inline-block;
 }
 
 p{
-    color: aliceblue;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 12px;
 }
 
 .card-img-top{max-width: 300px;}
@@ -21,31 +31,34 @@ p{
     height: 320px;
     margin: auto;
     display: block;
+    border-radius: 10%;
   }
 
-  h4{
-    text-align: center;
-    color: rgb(255, 78, 107);
+h4{
+    text-align: left;
+    color: rgb(78, 58, 96);
   }
-  .form{
-    text-align: center;
-  }
-
-  h2{
-    text-align: center;
-  }
-  .nome{
-        list-style-type: none;
-        text-align: center;
+.form{
+    text-align: right;
   }
 
-.container2 img { max-width: 1000px;}
+h2{
+    text-align: center;
+    color: rgb(78, 58, 96);
+    background-color: rgb(218, 218, 255);
+  }
+.nome{
+      list-style-type: none;
+      text-align: center;
+  }
+
+.container2 img { max-width: 1000;}
 .container2 {
   width: 751px;
-  height: 350px;
+  height: 400;
   display: flex;
   vertical-align: top;
-  margin-top: 50px;
+  margin-top: 25px;
   position: absolute;
 }
 
@@ -57,4 +70,87 @@ p{
   vertical-align: top;
   margin-top: 50px;
   position: absolute;
+}
+
+button{
+  background-color:rgb(98, 45, 136);
+  color: rgb(211, 186, 233);
+}
+
+.home{
+  text-align: center;
+}
+.row img { max-width: 200px;}
+.row {
+  display: inline-grid;
+	width: 69%;
+  text-align: left;
+}
+
+.row2 img { max-width: 200px;}
+div.row2 {
+  display: inline-block;
+  margin-right: 0vw;
+  font-size: 3vw;
+  text-align: center;
+  padding: 0vw 0vw 5vw 0vw;
+  min-width:58vw;
+  float: right;
+}
+
+.row3 img{ max-width: 200px;}
+div.row3{
+  display: inline-block;
+  margin-right: 2vw;
+  font-size: 3vw;
+  text-align: center;
+  padding: 0vw 0vw 5vw 0vw;
+  min-width: 25vw;
+  float: right;
+}
+
+.noite{
+  padding: 5px;
+}
+
+.impressao{
+  padding: 0px;
+  margin-right: 20vw;
+}
+.testedoteste{
+  height: 100%;
+}
+
+.box {
+  display: inline-block;
+	width: 69%;
+  text-align: left;
+  padding: 40px;
+}
+
+.teste1 {
+  padding: 10px;
+ text-align: center;
+}
+
+div.box {
+	width: 150px;
+	display: inline-block;
+}
+
+.paragrafo{
+  text-align: left;
+}
+
+.coluna2{
+  text-align: left;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+.form {
+	display: inline-block;
 }
