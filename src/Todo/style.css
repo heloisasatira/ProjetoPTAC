@@ -5,7 +5,7 @@ body{
 }
 
 h3{
-    text-align: left; 
+    text-align: center; 
     color: rgb(78, 58, 96);
 }
 
@@ -31,7 +31,7 @@ p{
     height: 320px;
     margin: auto;
     display: block;
-    border-radius: 10%;
+    border-radius:  7%;
   }
 
 h4{
@@ -87,28 +87,6 @@ button{
   text-align: left;
 }
 
-.row2 img { max-width: 200px;}
-div.row2 {
-  display: inline-block;
-  margin-right: 0vw;
-  font-size: 3vw;
-  text-align: center;
-  padding: 0vw 0vw 5vw 0vw;
-  min-width:58vw;
-  float: right;
-}
-
-.row3 img{ max-width: 200px;}
-div.row3{
-  display: inline-block;
-  margin-right: 2vw;
-  font-size: 3vw;
-  text-align: center;
-  padding: 0vw 0vw 5vw 0vw;
-  min-width: 25vw;
-  float: right;
-}
-
 .noite{
   padding: 5px;
 }
@@ -125,7 +103,14 @@ div.row3{
   display: inline-block;
 	width: 69%;
   text-align: left;
-  padding: 40px;
+  padding: 47px;
+}
+
+.box {
+  display: inline-block;
+	width: 69%;
+  text-align: left;
+  padding: 47px;
 }
 
 .teste1 {
@@ -153,4 +138,12 @@ h1{
 
 .form {
 	display: inline-block;
+}
+
+span{
+  font-size: 13px;
+}
+
+.paragradoH{
+ color: black;
 }
