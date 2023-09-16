@@ -10,7 +10,7 @@ export default function ToDo() {
     const [id, setId] = useState(1);// "estado" para contar os ids
 
     const [idUsuario, setIdUsuario] = useState(1);
-    const [listaUsuario, setListaUsuario] = useState([]);//definir que atividade2 será um array
+    const [listaUsuario, setListaUsuario] = useState([]);//definir que listaUsuario será um array
     const [nome, setNome] = useState("");//definir que nome será um array
 
     const salvarN = (e) => {//para coletar o nome do usuário
@@ -52,17 +52,17 @@ export default function ToDo() {
 Veja mais sobre "Gênero dramático" em: https://brasilescola.uol.com.br/literatura/genero-dramatico.htm</p>
 
             <div class="box">
-                    <div class="row"> <img src="https://1.bp.blogspot.com/-jmdovt0p0cU/UvY9VNJzjLI/AAAAAAAAYqo/8EBMHGpTV0Y/s1600/van+gogh-002.jpg"/>
-                      <span> Titulo da primeira imagem </span>
+                    <div class="row"> <img src="https://i.pinimg.com/564x/39/c5/ef/39c5efbf8b5a81c880572a9671468070.jpg"/>
+                      <span>Noite Estrelada, Van Gogh</span>
                     </div>
                 </div>     
                 <div class="box">
                     <div class="row"> <img src="https://norfipc.com/fotos/arte/Vincent-van-Gogh-Wheat-Field-with-Cypresses-1889.jpg"/>
-                    <span> Titulo da segunda imagem </span></div> 
+                    <span>Campo de Trigo com ciprestes, Van Gogh</span></div> 
                 </div>
                 <div class="box">
                     <div class="row"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTJiW5pU69MVRTmyMqwQzLzxIYt3Kzyhk0OA&usqp=CAU"/>
-                    <span> Titulo da segunda imagem </span></div> 
+                    <span> O Quarto, Van Gogh</span></div> 
                 </div>
 
 
@@ -97,7 +97,6 @@ Veja mais sobre "Gênero dramático" em: https://brasilescola.uol.com.br/literat
                     </li>
                 </ul>
            )}
-
         </div>
     );
 }
