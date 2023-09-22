@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react";// useState permite a criação de estado no componente através de função e faz o gerenciamento do estado do componente e retorna um array
 
 import { Link } from "react-router-dom";
 
@@ -6,7 +6,7 @@ import "./style.css";
 
 export default function ToDo() {
     const [atividade, setAtividade] = useState("");//definir que inicialmente atividade será uma string
-    const [lista, setLista] = useState([]);//definir que lista será um array
+    const [lista, setLista] = useState([]);//definir que lista será um array, que irá armazenar atividade
     const [id, setId] = useState(1);// "estado" para contar os ids
 
     const [idUsuario, setIdUsuario] = useState(1);
@@ -14,7 +14,7 @@ export default function ToDo() {
     const [nome, setNome] = useState("");//definir que nome será um array
 
     const salvarN = (e) => {//para coletar o nome do usuário
-        e.preventDefault();//previnir a ação de enviar o formulário
+        e.preventDefault();//previnir a ação de enviar o formulário; preventDefault serve para prevenir o comportamento padrão de um evento; evitar que a página seja redirecionada automaticamente
         setListaUsuario([...listaUsuario, {
             nome: nome,
             id: idUsuario //conceder o id atual
@@ -92,8 +92,8 @@ Veja mais sobre "Gênero dramático" em: https://brasilescola.uol.com.br/literat
             {lista.map((ativ) =>
                 <ul key={ativ.id}>
                     <li>
-                        <p>{ativ.atividade}</p>
-                        <button onClick={() => remover(ativ.id)}>Remover</button>
+                        <p class="ativ">{ativ.atividade}</p>
+                        <button onClick={() => remover(ativ.id)}>Remover</button>   
                     </li>
                 </ul>
            )}
