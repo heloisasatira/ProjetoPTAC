@@ -41,12 +41,12 @@ E tal reflexo existe tendo como base os valores estéticos da beleza e da harmon
        <p>Na verdade, a arte transforma a forma de imaginar e de entender o mundo. É uma forma de um indivíduo expressar as suas emoções, história e cultura por meio de valores estéticos, como beleza, harmonia e equilíbrio. Por meio da história da arte, é possível conhecer um pouco mais sobre o ser humano através da evolução das suas diversas expressões, ou conhecer a história e as tradições de um país através de suas manifestações culturais.</p> 
                 <div class="box">
                     <div class="row"> <img src="https://i.pinimg.com/564x/b6/a9/d6/b6a9d68a4d9bfc92bcf9ada696f5ada1.jpg"/>
-                      <p class="paragradoH">Pieter Bruegel, o Velho, foi o artista mais importante da pintura renascentista flamenga e brabantina, um pintor e gravurista da região de Brabante, conhecido por suas retratações de paisagens e cenas camponesas. </p>
+                      <p class="paragradoH">Pieter Bruegel, o Velho, foi o artista mais importante da pintura renascentista flamenga e brabantina, um pintor e gravurista da região de Brabante. </p>
                     </div>
                 </div>     
                 <div class="box">
                     <div class="row"> <img src="https://i.pinimg.com/564x/42/ed/23/42ed23f148e848af606ec4ba4fa16345.jpg"/>
-                    <p class="paragradoH"> Oscar-Claude Monet foi um pintor francês e o mais célebre entre os pintores impressionistas. O termo Impressionismo surgiu a partir de uma crítica a um dos primeiros quadros de Monet, "Impressão, nascer do sol".</p></div> 
+                    <p class="paragradoH"> Oscar-Claude Monet foi um pintor francês e o mais célebre entre os pintores impressionistas.</p></div> 
                 </div>
                 <div class="box">
                     <div class="row"> <img src="https://i.pinimg.com/564x/cf/45/2f/cf452fa7282c9f2aabc3c586491b99ed.jpg"/>
@@ -55,3 +55,4 @@ E tal reflexo existe tendo como base os valores estéticos da beleza e da harmon
             </div>  
     );
 }
+<footer>Meu Site - Todos os direitos Reservados - 2022</footer>
