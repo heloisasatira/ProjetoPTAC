@@ -1,17 +1,21 @@
-import { useState } from "react";// useState permite a criação de estado no componente através de função e faz o gerenciamento do estado do componente e retorna um array
+import { useState, useEffect } from "react";// useState permite a criação de estado no componente através de função e faz o gerenciamento do estado do componente e retorna um array
 
 import { Link } from "react-router-dom";
 
 import "./style.css";
 
 export default function ToDo() {
+    const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")) || [];
+
     const [atividade, setAtividade] = useState("");//definir que inicialmente atividade será uma string
-    const [lista, setLista] = useState([]);//definir que lista será um array, que irá armazenar atividade
-    const [id, setId] = useState(1);// "estado" para contar os ids
+    const [lista, setLista] = useState(listaLocalStorage);//definir que lista será um array, que irá armazenar atividade
+    const [id, setId] = useState(1);//"estado" para contar os ids
 
     const [idUsuario, setIdUsuario] = useState(1);
     const [listaUsuario, setListaUsuario] = useState([]);//definir que listaUsuario será um array
     const [nome, setNome] = useState("");//definir que nome será um array
+
+    useEffect(()=>{localStorage.setItem("lista", JSON.stringify(lista))},[lista]);
 
     const salvarN = (e) => {//para coletar o nome do usuário
         e.preventDefault();//previnir a ação de enviar o formulário; preventDefault serve para prevenir o comportamento padrão de um evento; evitar que a página seja redirecionada automaticamente
@@ -35,7 +39,6 @@ export default function ToDo() {
         setAtividade("");
     };
     const remover = (id) => {
-        /*setLista(lista.filter((ativ) => (ativ.id !== id ? lista : null)));*/
         const auxLista = [];
         lista.map((lista) => {
             if (lista.id !== id) {
