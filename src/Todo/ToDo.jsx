@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 export default function ToDo() {
-    const listaLocalStorage = JSON.parse(localStorage.getItem("Lista")) || [];
+    const listaLocalStorage = JSON.parse(localStorage.getItem("lista"));
 
     const [atividade, setAtividade] = useState("");//definir que inicialmente atividade será uma string
-    const [lista, setLista] = useState(listaLocalStorage);//definir que lista será um array, que irá armazenar atividade
-    const [id, setId] = useState(1);//"estado" para contar os ids
+    const [lista, setLista] = useState(listaLocalStorage || []);//definir que lista será um array, que irá armazenar atividade
+    const [id, setId] = useState(listaLocalStorage [listaLocalStorage.length - 1]?.id + 1 || 1);//"estado" para contar os ids
 
     const [idUsuario, setIdUsuario] = useState(1);
     const [listaUsuario, setListaUsuario] = useState([]);//definir que listaUsuario será um array
